@@ -706,13 +706,18 @@ footer .container ul.icon li a:hover {
     background-color: #fed136;
     text-decoration: none;
 }
-
+#picture{
+    background-color: #E5E5F3;
+    
+}
 #picture .waterfall-ct {
     text-align: center;
-    border: 1px solid #ccc;
-    width: 1110px;
+    /*border: 1px solid #ccc;*/
+    width: 1266px;
     margin: 0 auto;
     position: relative;
+    background-color: #E5E5F3;
+    
 }
 
 #picture .waterfall-ct>li {
@@ -722,7 +727,7 @@ footer .container ul.icon li a:hover {
 }
 
 #picture img {
-    width: 200px;
+    width: 400px;
 }
 
 #picture .loadmore {
@@ -732,12 +737,12 @@ footer .container ul.icon li a:hover {
     line-height: 50px;
     cursor: pointer;
     color: white;
-    background-color: #F44336;
+    background-color:#FED136;
     font-weight: 700;
     font-size: 18px;
     transition: 0.5s all;
     margin: 0 auto;
-    margin-top: 50px;
+    /*margin-top: 50px;*/
     text-align: center;
 }
 

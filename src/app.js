@@ -6,39 +6,39 @@ var WaterFall = require('./js/waterfall')
 
 GoTop.init($('body'));
 Carousel.init($('.carousel'));
-var data = [{
-    src: 'https://unsplash.it/200/270'
+var data = [ {
+    src: 'https://github.com/jscgq/webpack_task/blob/master/images/pixar03.jpg?raw=true'
 }, {
-    src: 'https://unsplash.it/200/330'
+    src: 'https://github.com/jscgq/webpack_task/blob/master/images/pixar04.jpg?raw=true'
 }, {
-    src: 'https://unsplash.it/200/190'
+    src: 'https://github.com/jscgq/webpack_task/blob/master/images/pixar05.jpg?raw=true'
 }, {
-    src: 'https://unsplash.it/200/230'
+    src: 'https://github.com/jscgq/webpack_task/blob/master/images/pixar1.jpg?raw=true'
 }, {
-    src: 'https://unsplash.it/200/350'
+    src: 'https://github.com/jscgq/webpack_task/blob/master/images/pks.jpg?raw=true'
 }, {
-    src: 'https://unsplash.it/200/360'
+    src: 'https://github.com/jscgq/webpack_task/blob/master/images/wali.jpg?raw=true'
 }, {
-    src: 'https://unsplash.it/200/150'
+    src: 'https://github.com/jscgq/webpack_task/blob/master/images/img00.jpg?raw=true'
 }, {
-    src: 'https://unsplash.it/200/210'
+    src: 'https://github.com/jscgq/webpack_task/blob/master/images/hudi.jpg?raw=true'
 }, {
-    src: 'https://unsplash.it/200/310'
+    src: 'https://github.com/jscgq/webpack_task/blob/master/images/img1.jpg?raw=true'
 }, {
-    src: 'https://unsplash.it/200/320'
+    src: 'https://github.com/jscgq/webpack_task/blob/master/images/img3.jpg?raw=true'
 }, {
-    src: 'https://unsplash.it/200/130'
+    src: 'https://github.com/jscgq/webpack_task/blob/master/images/img2.jpg?raw=true'
 }, {
-    src: 'https://unsplash.it/200/250'
+    src: 'https://github.com/jscgq/webpack_task/blob/master/images/img4.jpg?raw=true'
 }, {
-    src: 'https://unsplash.it/200/290'
+    src: 'https://github.com/jscgq/webpack_task/blob/master/images/img5.jpg?raw=true'
 }, {
-    src: 'https://unsplash.it/200/170'
+    src: 'https://github.com/jscgq/webpack_task/blob/master/images/pixar01.jpg?raw=true'
 }]
 var index = 0,
     tpl = '';
 $('.loadmore').on('click', function() {
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < 3; i++) {
         if (index > 13) {
             index = 0
         }
@@ -46,6 +46,7 @@ $('.loadmore').on('click', function() {
         index++
     }
     $('.waterfall-ct').append($(tpl))
+    tpl = "";
     $('.waterfall-ct').find('img').on('load', function() {
         WaterFall.init($('.waterfall-ct'));
     })
